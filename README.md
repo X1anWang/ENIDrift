@@ -3,7 +3,7 @@
 [![Discord Chat][discord-badge]][discord]
 ==
 
-**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. The technique design of this work is introduced in this [updated paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf). In this repo, we provide the [code of ENIDrift](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/ENIDrift), and also open-source the first real-world drift dataset for network intrusion detection, [RWDIDS-2022](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/RWDIDS).
+**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. In this repo, we provide the [code of ENIDrift](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/ENIDrift), and also open-source the first real-world drift dataset for network intrusion detection, [RWDIDS-2022](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/RWDIDS).
 
 ## What is ENIDrift?
 Machine Learning (ML) techniques have been widely applied for network intrusion detection. However, existing ML-based network intrusion detection systems (NIDS) suffer from fundamental limitations that hinder them from being deployed in the real world. They consider a narrow scope rather than real-world drift that involves dynamically distributed network packets and well-crafted ML attacks. Besides, they pose high runtime overhead and have low processing speed.
@@ -37,7 +37,7 @@ Compared to other work, ENIDrift has:
 ## Quick start
 1. Download the source code:
 ```sh
-$ git clone https://github.com/AnonymousGithubRepo/ENIDrift
+$ git clone https://github.com/X1anWang/ENIDrift
 ```
 
 2. Run ENIDrift:
@@ -60,10 +60,9 @@ $ python3 main
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/LICENSE) file for details
 
 ## Documentation
-Please download [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf) for details on ENIDrift concepts and configuration.
+Please download the paper for details on ENIDrift concepts and configuration.
 
 ## Community & help
-* Got a question? Please get in touch via [Discord][discord] or file an [issue](https://github.com/anonymousgithubrepo/enidrift/issues).
 * If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/anonymousgithubrepo/enidrift/issues).
 
 <!-- refs -->
