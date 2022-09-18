@@ -19,9 +19,9 @@ For privacy issues, we only extract the key fields used in NIDS and remove other
 
 # Download
 
-* Network fields: [link](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing)
-* Dataset with light real-world drift: [link](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing)
-* Fierce real-world drift: [link](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing)
+* Network fields: [link](https://drive.google.com/drive/folders/1QmrtJAD-GgeaUuxy5DC5sy8FFTorEfI-?usp=sharing)
+* Dataset with light real-world drift: [link](https://drive.google.com/drive/folders/1QmrtJAD-GgeaUuxy5DC5sy8FFTorEfI-?usp=sharing)
+* Fierce real-world drift: [link](https://drive.google.com/drive/folders/1QmrtJAD-GgeaUuxy5DC5sy8FFTorEfI-?usp=sharing)
 
 # Measure the level of real-world drift: Drift Ratio
 
