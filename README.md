@@ -1,5 +1,5 @@
 **ENIDrift**
-![GitHub](https://img.shields.io/github/license/anonymousgithubrepo/enidrift)
+![GitHub](https://img.shields.io/github/license/x1anwang/enidrift)
 [![Discord Chat][discord-badge]][discord]
 ==
 
