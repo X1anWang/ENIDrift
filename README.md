@@ -64,9 +64,9 @@ Please see the ACSAC'22 artifact evaluation [repository](https://github.com/X1an
 
 We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack. It consists of two part: 1) common network packets provided by categories, and 2) fierce real world drift.
 
-The common network packets consist of port scan and dos attack, and are provided by normal and anomalous types. Its level of drift is gentle. Users are expected to combine the data according to their need for the drift level. A simple way is to combine them according to their timestamp, and mix network packets from different days to increase the drift level. It is provided [here](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing).
+Part I: The common network packets consist of port scan and dos attack, and are provided by normal and anomalous types. Its level of drift is gentle. Users are expected to combine the data according to their need for the drift level. A simple way is to combine them according to their timestamp, and mix network packets from different days to increase the drift level. It is provided [here](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing).
 
-To evaluate the three components of ENIDrift, we summarize four sub-set for the main channels of real-world drift for NIDS: adversarial attack, data contamination, heavy drift and reocurrent attack. This part is provided by the four sub-set and can be used directly according to our script. It is provided [here](https://drive.google.com/drive/folders/1JTaDNCpZXSIUDiKXKc_AUxDEg4IGQaL6?usp=sharing).
+Part II: To evaluate the three components of ENIDrift, we summarize four sub-set for the main channels of real-world drift for NIDS: adversarial attack, data contamination, heavy drift and reocurrent attack. This part is provided by the four sub-set and can be used directly according to our script. It is provided [here](https://drive.google.com/drive/folders/1JTaDNCpZXSIUDiKXKc_AUxDEg4IGQaL6?usp=sharing).
 
 # License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/x1anwang/ENIDrift/blob/main/LICENSE) file for details
@@ -76,6 +76,6 @@ Please download the paper for details on ENIDrift concepts and configuration.
 
 ## Community & help
 * If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/x1anwang/enidrift/issues).
-* Queries via Email are also welcome: Sean, xwanggj@connect.hku.hk
+* Email are also welcome: Sean, xwanggj@connect.hku.hk
 <!-- refs -->
 [license-badge]: https://img.shields.io/github/license/x1anwang/enidrift
