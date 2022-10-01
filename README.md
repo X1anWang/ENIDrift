@@ -25,7 +25,7 @@ Compared to other work, ENIDrift has:
 ## Prerequisites
 1. Pre-process for network packets.
 
-      For privacy issues, only key network fields are kept in our dataset in the form of .csv files. Accordingly, the input for ENIDrift is .csv files containing the string-type fields of network packets. If you want to run on your own .pcap file, we suggest utilizing our [python script](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/util/pcap2csv.py) to convert .pcap to .csv file first. The script is based on [Kitsune](https://github.com/ymirsky/Kitsune-py).
+      For privacy issues, only key network fields are kept in our dataset in the form of .csv files. Accordingly, the input for ENIDrift is .csv files containing the string-type fields of network packets. If you want to run on your own .pcap file, we suggest utilizing our [python script](https://github.com/x1anwang/ENIDrift/blob/main/util/pcap2csv.py) to convert .pcap to .csv file first. The script is based on [Kitsune](https://github.com/ymirsky/Kitsune-py).
 
 2. Software configuration:
       * Python 3.8.5
