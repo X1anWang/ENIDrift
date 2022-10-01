@@ -3,7 +3,7 @@
 [![Discord Chat][discord-badge]][discord]
 ==
 
-**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. In this repo, we provide the [code of ENIDrift](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/ENIDrift), and also open-source the first real-world drift dataset for network intrusion detection, [RWDIDS-2022](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/RWDIDS).
+**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. In this repo, we provide the artifact of ENIDrift (ACSAC'22).
 
 ## What is ENIDrift?
 Machine Learning (ML) techniques have been widely applied for network intrusion detection. However, existing ML-based network intrusion detection systems (NIDS) suffer from fundamental limitations that hinder them from being deployed in the real world. They consider a narrow scope rather than real-world drift that involves dynamically distributed network packets and well-crafted ML attacks. Besides, they pose high runtime overhead and have low processing speed.
@@ -19,7 +19,7 @@ We show the workflow of ENIDrift in the above figure. At the initial stage, raw 
 
 Compared to other work, ENIDrift has:
 1. **Novel techniques and system.** We develop a new NIDS, ENIDrift with several new techniques: 1) iP2V that incrementally embeds relevant network packets into similar vectors and has good performance and efficiency for NIDS tasks; 2) G-idx that measures both stability and accuracy of current data chunk for a more robust sub-classifier generation; 3) ENIDrift update module that improves the adjustment of sub-classifier weights and data chunk management.
-2. **New open-sourced dataset with real-world drift.** We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack.
+2. **New dataset with real-world drift.** We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack.
 3. **Readily deployable performance.** Our evaluation results demonstrate that ENIDrift has good performance on both accuracy and processing speed, and is sufficient for real-world deployment even under inadequate and delayed training data.
 
 ## Prerequisites
@@ -46,6 +46,10 @@ $ cd ENIDrift
 $ python3 main
 ```
 
+## Examples
+
+Please see the ACSAC'22 artifact evaluation [repository](https://github.com/X1anWang/ENIDrift-Artifact) for detailed instructions and possible errors for running ENIDrift.
+
 ## Advanced functions
 1. Model save.
       To save the artificial neural network of iP2V and sub-classifiers of ENIDrift (i.e., models, weights and number of trained sub-classifiers), please set the 'save' option to be True in the main.py file. The program will save the related information by joblib library at the end of the execution. The ENIDrift sub-classifiers will be saved in the folder named model. The neural network of iP2V will be saved in the folder named para (short for parameter).
@@ -56,16 +60,24 @@ $ python3 main
 3. Control the speed of the release of training data.
       To simulate the time gap and delay of training data with ground truth labels, we enables a much slower release of training data. To observe NIDS under different levels of delays, please set the parameter 'realese_speed' with corresponding values.
 
+# Real-world Drift Dataset for Network Intrusion Detection
+
+We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack. It consists of two part: 1) common network packets provided by categories, and 2) fierce real world drift.
+
+The common network packets consist of port scan and dos attack, and are provided by normal and anomalous types. Its level of drift is gentle. Users are expected to combine the data according to their need for the drift level. A simple way is to combine them according to their timestamp, and mix network packets from different days to increase the drift level. It is provided [here](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing).
+
+To evaluate the three components of ENIDrift, we summarize four sub-set for the main channels of real-world drift for NIDS: adversarial attack, data contamination, heavy drift and reocurrent attack. This part is provided by the four sub-set and can be used directly according to our script. It is provided [here](https://drive.google.com/drive/folders/1JTaDNCpZXSIUDiKXKc_AUxDEg4IGQaL6?usp=sharing).
+
 # License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/x1anwang/ENIDrift/blob/main/LICENSE) file for details
 
 ## Documentation
 Please download the paper for details on ENIDrift concepts and configuration.
 
 ## Community & help
-* If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/anonymousgithubrepo/enidrift/issues).
+* If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/x1anwang/enidrift/issues).
 
 <!-- refs -->
-[license-badge]: https://img.shields.io/github/license/anonymousgithubrepo/enidrift
+[license-badge]: https://img.shields.io/github/license/x1anwang/enidrift
 [discord]: https://discord.gg/BeVM624n
 [discord-badge]: https://img.shields.io/badge/chat-on%20Discord-blue
