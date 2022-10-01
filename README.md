@@ -1,6 +1,5 @@
 **ENIDrift**
 ![GitHub](https://img.shields.io/github/license/x1anwang/enidrift)
-[![Discord Chat][discord-badge]][discord]
 ==
 
 **ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. In this repo, we provide the artifact of ENIDrift (ACSAC'22).
