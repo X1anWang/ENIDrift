@@ -60,7 +60,7 @@ Please see the ACSAC'22 artifact evaluation [repository](https://github.com/X1an
 3. Control the speed of the release of training data.
       To simulate the time gap and delay of training data with ground truth labels, we enables a much slower release of training data. To observe NIDS under different levels of delays, please set the parameter 'realese_speed' with corresponding values.
 
-# Real-world Drift Dataset for Network Intrusion Detection
+# Real-world Drift Dataset for Network Intrusion Detection (RWDIDS)
 
 We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack. It consists of two part: 1) common network packets provided by categories, and 2) fierce real world drift.
 
