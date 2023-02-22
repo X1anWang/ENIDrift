@@ -75,6 +75,6 @@ Please download the paper for details on ENIDrift concepts and configuration.
 
 ## Community & help
 * If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/x1anwang/enidrift/issues).
-* Email are also welcome: Sean, xwanggj@connect.hku.hk
+* Email are also welcome: Sean, x1anwang@outlook.com
 <!-- refs -->
 [license-badge]: https://img.shields.io/github/license/x1anwang/enidrift
